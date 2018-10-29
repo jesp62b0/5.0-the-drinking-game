@@ -1,3 +1,29 @@
+#screen {
+
+    position: relative;
+    background-size: 100%;
+    width: 100vw height: 56.25vw;
+    margin: 0;
+
+}
+
+#startskaerm {
+
+    position: absolute;
+    background-image: url(img/startskaerm.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    z-index: 4;
+
+}
+
+.hide {
+
+    display: none;
+}
+
+
 #game_background1 {
 
     background-image: url(img/scene_baggrund.svg);
@@ -24,7 +50,6 @@
 }
 
 
-
 #game {
 
     position: relative;
@@ -34,11 +59,11 @@
 
     background-image: url(img/beer.svg);
     background-size: 100%;
-    width: 8.2vw;
-    height: 30.5vw;
+    width: 4.8vw;
+    height: 18vw;
     position: absolute;
-    top: -45vw;
-    left: 35vw;
+    top: -40vw;
+    left: -10vw;
 
 }
 
@@ -46,11 +71,11 @@
 
     background-image: url(img/beer.svg);
     background-size: 100%;
-    width: 8.2vw;
-    height: 30.5vw;
+    width: 6vw;
+    height: 22vw;
     position: absolute;
-    top: -44vw;
-    left: 64vw;
+    top: -36vw;
+    left: -10vw;
     z-index: 1;
 
 }
@@ -59,11 +84,11 @@
 
     background-image: url(img/beer.svg);
     background-size: 100%;
-    width: 8.2vw;
-    height: 30.5vw;
+    width: 6vw;
+    height: 22vw;
     position: absolute;
-    top: -49vw;
-    left: 2vw;
+    top: -34vw;
+    left: -10vw;
 
 }
 
@@ -72,11 +97,12 @@
 
     background-image: url(img/shot.svg);
     background-size: 100%;
-    width: 9vw;
-    height: 10vw;
+    width: 8vw;
+    height: 8.8vw;
     position: absolute;
     top: -28vw;
-    left: 12vw;
+    left: 11vw;
+    z-index: 2;
 }
 
 #shot2 {
@@ -84,22 +110,24 @@
 
     background-image: url(img/shot.svg);
     background-size: 100%;
-    width: 9vw;
-    height: 10vw;
+    width: 8vw;
+    height: 8.8vw;
     position: absolute;
     top: -30vw;
     left: 88vw;
+    z-index: 1;
 }
 
 #water {
 
     background-image: url(img/water.svg);
     background-size: 100%;
-    width: 7vw;
-    height: 26vw;
+    width: 5.4vw;
+    height: 20vw;
     position: absolute;
     top: -40vw;
     left: 59vw;
+    z-index: 1;
 
 }
 
@@ -107,12 +135,12 @@
 
     background-image: url(img/water.svg);
     background-size: 100%;
-    width: 7vw;
-    height: 26vw;
+    width: 5.4vw;
+    height: 20vw;
     position: absolute;
-    top: -39vw;
+    top: -35vw;
     left: 18vw;
-    z-index: 2;
+    z-index: 3;
 
 }
 
@@ -122,8 +150,8 @@
 
     background-image: url(img/soberpill.svg);
     background-size: 100%;
-    width: 10vw;
-    height: 18.5vw;
+    width: 8vw;
+    height: 15vw;
     position: absolute;
     top: -35vw;
     left: 75vw;
@@ -134,10 +162,10 @@
 
     background-image: url(img/soberpill.svg);
     background-size: 100%;
-    width: 10vw;
-    height: 18.5vw;
+    width: 8vw;
+    height: 15vw;
     position: absolute;
-    top: -38vw;
+    top: -28vw;
     left: 25vw;
 }
 
@@ -177,5 +205,216 @@
     height: 5vw;
     top: -5.5vw;
     left: 93vw;
+
+}
+
+
+.beer1 {
+
+    animation-name: beer1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes beer1 {
+
+    0% {
+        transform: translateX(-50vw);
+    }
+
+    100% {
+
+        transform: translateX(120vw);
+    }
+}
+
+
+.beer2 {
+
+    animation-name: beer1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes beer2 {
+
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+
+        transform: translate(120vw);
+    }
+}
+
+.beer3 {
+
+    animation-name: beer1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+
+@keyframes beer3 {
+
+    0% {
+        transform: translateX(-150vw);
+    }
+
+    100% {
+
+        transform: translate(120vw);
+    }
+}
+
+
+
+
+
+
+.shots {
+
+    animation-name: shots;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shots {
+
+    0% {
+
+        transform: translateX(-150vw);
+    }
+
+    100% {
+
+        transform: translateX(110vw);
+    }
+}
+
+.shots1 {
+
+    animation-name: shots;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes shots1 {
+
+    0% {
+
+        transform: translateX(-150vw);
+    }
+
+    100% {
+
+        transform: translateX(110vw);
+    }
+}
+
+
+.water1 {
+
+    animation-name: shots;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes water1 {
+
+    0% {
+
+        transform: translateX(-150vw);
+    }
+
+    100% {
+
+        transform: translateX(110vw);
+    }
+
+
+}
+
+
+.water2 {
+
+    animation-name: shots;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes water2 {
+
+    0% {
+
+        transform: translateX(-150vw);
+    }
+
+    100% {
+
+        transform: translateX(110vw);
+    }
+
+
+}
+
+
+.pill {
+
+    animation-name: shots;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes pill {
+
+    0% {
+
+        transform: translateX(-150vw);
+    }
+
+    100% {
+
+        transform: translateX(110vw);
+    }
+
+
+}
+
+.pill1 {
+
+    animation-name: shots;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes pill1 {
+
+    0% {
+
+        transform: translateX(-150vw);
+    }
+
+    100% {
+
+        transform: translateX(110vw);
+    }
+
 
 }
