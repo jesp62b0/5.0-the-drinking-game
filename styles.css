@@ -7,6 +7,61 @@
 
 }
 
+/*effekter*/
+
+
+.hide {
+
+    visibility: hidden;
+}
+
+.show {
+
+    visibility: show;
+}
+
+.fade_out {
+
+    animation-name: fadeout_kf;
+    animation-duration: 1;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+.pulse {
+
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 #startskaerm {
 
     position: absolute;
@@ -18,10 +73,21 @@
 
 }
 
-.hide {
+#start {
 
-    display: none;
+    position: absolute;
+    background-image: url(img/start_spil.svg);
+    background-size: 100%;
+    z-index: 5;
+    width: 15vw;
+    height: 5.7vw;
+    top: -26vw;
+    left: 40.3vw;
+    cursor: pointer;
+
 }
+
+
 
 
 #game_background1 {
@@ -212,8 +278,9 @@
 .beer1 {
 
     animation-name: beer1;
-    animation-duration: 7s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
+    cursor: pointer;
 
 }
 
@@ -235,7 +302,7 @@
 .beer2 {
 
     animation-name: beer1;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 
 }
@@ -255,7 +322,7 @@
 .beer3 {
 
     animation-name: beer1;
-    animation-duration: 7s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
 
@@ -415,6 +482,14 @@
 
         transform: translateX(110vw);
     }
+
+
+}
+
+#points {
+    position: absolute;
+    left: 45vw;
+    top: 5vw;
 
 
 }
